@@ -16,6 +16,8 @@
 
 body {
    background: radial-gradient( #0000, hsla(0, 0%, 0%, 0.95));
+   min-height: calc(100svh - 1rem);
+   place-content: center;
 }
 
 body::before {
@@ -26,6 +28,7 @@ body::before {
 }
 
 main {
+   padding-bottom: 2rem;
    border: 1px solid white;
    margin: auto;
    margin-top: 0.5rem;
@@ -33,7 +36,6 @@ main {
    width: max(80vw, 300px);
    color: white;
    position: relative;
-   min-height: calc(100svh - 1rem);
    text-align: center;
    place-content: center;
    font-weight: 900;
@@ -87,12 +89,6 @@ button:hover {
 .count {
    margin-right: 0.5rem;
    position: absolute;
-   bottom: 0;
+   top: 0;
    right: 0;
-}
-
-@media screen and (max-width:768px) {
-   main {
-      place-content: center;
-   }
 }
